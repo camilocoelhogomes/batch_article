@@ -1,0 +1,27 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "rootDir": "./src",
+    "outDir": "build_temp",
+    "target": "es2022",
+    "lib": ["es2022","dom"],
+    "emitDecoratorMetadata": true,
+    "module": "commonJS",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "strictPropertyInitialization": false,
+    "plugins": [
+      {
+        "transform": "ts-auto-mock/transformer",
+        "cacheBetweenTests": false
+      }
+    ]
+  },
+  "exclude": ["node_modules", "**/*.test.ts","src/test","jest.config.ts","debugServer.ts","esbuild.config.js"]
+}
