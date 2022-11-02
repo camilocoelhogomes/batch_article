@@ -1,7 +1,7 @@
 import {Transform, TransformCallback} from 'stream';
 import {Person} from '../Domain/Person';
 
-export class TransformObject extends Transform {
+export class CreatePerson extends Transform {
   constructor() {
     super({objectMode: true});
   }

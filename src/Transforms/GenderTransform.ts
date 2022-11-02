@@ -17,6 +17,7 @@ export class GenderTransform extends Transform {
     );
     const result = await Promise.all(promiseArr);
     this.push(result);
+    callback();
   }
 
   private async getGender(persons: Person[]): Promise<Person[]> {
