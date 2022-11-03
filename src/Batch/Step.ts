@@ -17,12 +17,14 @@ export class Step {
      * responsável por ler os itens
      */
     private readonly itemReader: Readable,
+
     /**
      * A pipeline do node Js pode receber várias transforms em cadeia, onde a
      * saida de uma é a entrada da outra, por isso vamos passar um Set<Transform> aqui,
      * garantindo assim que elas serão executadas na ordem correta
      */
     private readonly itemProcessors: Set<Transform>,
+
     /**
      * Responsável por escrever os dados de saida
      */
