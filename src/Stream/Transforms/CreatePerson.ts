@@ -1,5 +1,5 @@
 import {Transform, TransformCallback} from 'stream';
-import {Person} from '../Domain/Person';
+import {Person} from '../../Domain/Person';
 
 export class CreatePerson extends Transform {
   constructor() {

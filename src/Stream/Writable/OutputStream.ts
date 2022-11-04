@@ -1,5 +1,5 @@
 import {Writable} from 'stream';
-import {Person} from '../Domain/Person';
+import {Person} from '../../Domain/Person';
 import fs from 'fs';
 
 export class OutputStream extends Writable {

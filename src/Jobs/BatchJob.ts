@@ -1,10 +1,8 @@
-import {parse} from 'csv-parse';
 import {Job} from '../Architecture/Job';
 import {Step} from '../Architecture/Step';
-import {OutputStream} from '../Writable/OutputStream';
-import {NameGenerator} from '../Readable/NameGenerator';
-import {CreatePerson} from '../Transforms/CreatePerson';
-import fs from 'fs';
+import {OutputStream} from '../Stream/Writable/OutputStream';
+import {NameGenerator} from '../Stream/Readable/NameGenerator';
+import {CreatePerson} from '../Stream/Transforms/CreatePerson';
 
 export class BatchJob extends Job {
   /**
