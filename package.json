@@ -12,7 +12,8 @@
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run lint",
-    "build:run": "rimraf ./build_temp && rimraf ./build && npx tsc && node esbuild.config.js && rimraf ./build_temp && node ./build/index.js"
+    "build:run": "npm run build && node ./build/index.js",
+    "build": "rimraf ./build_temp && rimraf ./build && npx tsc && node esbuild.config.js && rimraf ./build_temp"
   },
   "keywords": [
     "batch",
