@@ -15,8 +15,6 @@ export class GetGenderTransform extends Transform {
       const result = await this.getGenderPort.getGender(chunk);
       this.push(result);
     } catch (error) {
-      callback(error as Error);
-    } finally {
       callback();
     }
   }
